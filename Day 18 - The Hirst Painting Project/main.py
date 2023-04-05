@@ -23,19 +23,17 @@ x = 0
 t.setheading(225)
 t.penup()
 t.forward(250)
-t.pendown()
 t.setheading(0)
+t.hideturtle()
 
 for i in range(10):
 
     for i in range (10):
 
         t.dot(20, random.choice(colors))
-        t.penup()
         t.forward(50)
-        t.pendown()
 
-    t.penup()
+
     t.left(90)
     t.forward(50)
     t.left(90)
@@ -43,8 +41,7 @@ for i in range(10):
     t.right(90)
     t.forward(20)
     t.right(90)
-    t.pendown()
-    x += 20 
+    x += 20
 
 
 screen = t.Screen()
